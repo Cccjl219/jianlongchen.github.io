@@ -379,10 +379,10 @@ table.imgtable, table.imgtable td {
 }
 
 .paper-authors {
-  color: #555;
+  color: #666;              /* 所有作者：浅灰 */
 }
 
 .paper-authors strong {
-  font-weight: bold;
-  color: inherit;   /* 关键：继承灰色，而不是变回黑色 */
+  font-weight: 600;         /* 比 normal 粗，但不夸张 */
+  color: #444;              /* 稍深一点的灰 */
 }
