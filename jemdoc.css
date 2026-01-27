@@ -377,3 +377,12 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+.paper-authors {
+  color: #555;
+}
+
+.paper-authors strong {
+  font-weight: bold;
+  color: inherit;   /* 关键：继承灰色，而不是变回黑色 */
+}
