@@ -386,3 +386,31 @@ table.imgtable, table.imgtable td {
   font-weight: 600;         /* 比 normal 粗，但不夸张 */
   color: #444;              /* 稍深一点的灰 */
 }
+
+/* Chinese name style */
+.chinese-name {
+    font-family:'STKaiti','华文行楷','KaiTi',cursive;
+    font-size:0.75em;
+    font-weight:normal;
+    color:#555;
+    margin-left:6px;
+}
+
+
+/* Profile image */
+.profile-img {
+    border-radius:50%;
+    border:1px solid #ddd;
+}
+
+
+/* Research list spacing */
+.research-list li {
+    margin-bottom:8px;
+}
+
+
+/* Publication title */
+.paper-title {
+    font-weight:bold;
+}
