@@ -20,10 +20,10 @@
 
 
     /* Keep reference style */
-    /* --max-w: 1030px;
-    --side-w: 245px; */
-    --max-w:1250px;
-    --side-w:270px;
+    --max-w: 1030px;
+    --side-w: 245px;
+    /* --max-w:1250px;
+    --side-w:270px; */
     --nav-h: 50px;
 
 }
