@@ -417,3 +417,204 @@ table.imgtable, table.imgtable td {
 
 
 }
+
+/* ===== Modern Academic Homepage Style ===== */
+
+
+/* fixed navigation */
+
+#top-nav{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+right:0;
+
+height:55px;
+
+background:white;
+
+border-bottom:1px solid #e5e5e5;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 40px;
+
+z-index:999;
+
+font-size:15px;
+
+}
+
+
+
+.nav-name{
+
+font-weight:bold;
+
+font-size:20px;
+
+}
+
+
+
+.nav-links a{
+
+margin-left:28px;
+
+text-decoration:none;
+
+color:#333;
+
+}
+
+
+
+.nav-links a:hover{
+
+color:#007acc;
+
+}
+
+
+
+
+
+/* prevent navbar covering */
+
+body{
+
+padding-top:70px;
+
+}
+
+
+
+
+/* profile image */
+
+
+.profile-img{
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:1px solid #ddd;
+
+}
+
+
+
+
+
+/* title */
+
+#toptitle h1{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.chinese-name{
+
+font-size:25px;
+
+font-weight:normal;
+
+margin-left:8px;
+
+}
+
+
+
+
+/* section */
+
+
+h2{
+
+margin-top:35px;
+
+padding-bottom:8px;
+
+border-bottom:1px solid #eee;
+
+color:#222;
+
+}
+
+
+
+
+/* publication */
+
+
+.paper-authors{
+
+margin:5px 0;
+
+}
+
+
+
+ul li{
+
+line-height:1.6;
+
+}
+
+
+
+
+/* smooth scrolling */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+
+
+/* mobile */
+
+@media(max-width:700px){
+
+
+#top-nav{
+
+padding:0 15px;
+
+}
+
+
+.nav-links a{
+
+margin-left:10px;
+
+font-size:13px;
+
+}
+
+
+.nav-name{
+
+display:none;
+
+}
+
+
+}
