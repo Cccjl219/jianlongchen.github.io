@@ -1,19 +1,30 @@
 /* =========================
    Basic
 ========================= */
+:root {
+      --black: #0a0a0a;
+      --pink-soft: #f9eef2;
+      --pink-line: #ecd2db;
+      --text: #333333;
+      --muted: #666666;
+      --light: #ca266a;
+      --bg: #ffffff;
+      --page: #fffafb;
+      --line: #eeeeee;
+      --max-w: 1030px;
+      --side-w: 245px;
+      --nav-h: 50px;
+    }
 
 * {
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     margin: 0;
 
     font-family:
@@ -21,42 +32,19 @@ body {
         Helvetica,
         Arial,
         sans-serif;
-
     color: #333;
-
     background: #ffffff;
-
     line-height: 1.65;
-
     font-size: 15px;
 }
 
-
-
-a {
-
-    color: #0066cc;
-
-    text-decoration: none;
-
-}
-
-
-a:hover {
-
-    text-decoration: underline;
-
-}
-
-
+a{color: var(--black); text-decoration: none;}
+a:hover {color: #00FFFF; text-decoration: none;}
 
 /* =========================
    Top Navigation
 ========================= */
-
-
 .topnav {
-
     position: sticky;
 
     top: 0;
