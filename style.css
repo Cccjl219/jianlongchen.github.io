@@ -91,12 +91,12 @@ a:hover {color: #1F4E79; text-decoration: underline;}
 ========================= */
 
 .page {
-    max-width: 1030px;
+    max-width: var(--max-w);
     margin: 0 auto;
-    padding: 35px 20px;
+    padding: 30px 20px 70px;
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 45px;
+    grid-template-columns: var(--side-w) minmax(0, 1fr);
+    gap: 42px;
 }
 
 /* =========================
