@@ -22,8 +22,8 @@
     /* Keep reference style */
     /* --max-w: 1030px;
     --side-w: 245px; */
-   --max-w:1200px；
-   --side-w:270px;
+    --max-w:1250px；
+    --side-w:270px;
     --nav-h: 50px;
 
 }
@@ -134,8 +134,6 @@ a:hover {
 
 }
 
-
-
 .home-link {
 
     font-size:17px;
@@ -146,8 +144,6 @@ a:hover {
 
 }
 
-
-
 .nav-links {
 
     display:flex;
@@ -155,8 +151,6 @@ a:hover {
     gap:22px;
 
 }
-
-
 
 .nav-links a {
 
@@ -168,8 +162,6 @@ a:hover {
 
 }
 
-
-
 .nav-links a:hover {
 
     color:var(--blue);
@@ -179,11 +171,9 @@ a:hover {
 }
 
 
-
 /* =========================
    Main Layout
 ========================= */
-
 
 .page {
 
@@ -199,7 +189,7 @@ a:hover {
         var(--side-w)
         minmax(0,1fr);
 
-    gap:42px;
+    gap:55px;
 
 }
 
