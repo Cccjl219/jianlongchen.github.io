@@ -1,154 +1,294 @@
 /* =========================
    Basic
 ========================= */
+
 :root {
-      --black: #0a0a0a;
-      --pink-soft: #f9eef2;
-      --pink-line: #ecd2db;
-      --text: #333333;
-      --muted: #666666;
-      --light: #ca266a;
-      --bg: #ffffff;
-      --page: #fffafb;
-      --line: #eeeeee;
-      --max-w: 1030px;
-      --side-w: 245px;
-      --nav-h: 50px;
-    }
+
+    --black: #0a0a0a;
+
+    /* Blue theme */
+    --blue: #1F4E79;
+    --blue-soft: #EAF2F8;
+    --blue-line: #D5E3F0;
+
+    --text: #333333;
+    --muted: #666666;
+
+    --bg: #ffffff;
+    --page: #ffffff;
+    --line: #eeeeee;
+
+
+    /* Keep reference style */
+    --max-w: 1030px;
+    --side-w: 245px;
+    --nav-h: 50px;
+
+}
+
+
 
 * {
     box-sizing: border-box;
 }
 
+
+
 html {
+
     scroll-behavior: smooth;
+
 }
 
+
+
 body {
-    margin: 0;
+
+    margin:0;
 
     font-family:
         "Helvetica Neue",
         Helvetica,
         Arial,
         sans-serif;
-    color: #333;
-    background: #ffffff;
-    line-height: 1.65;
-    font-size: 16px;
+
+    color:var(--text);
+
+    background:var(--bg);
+
+    line-height:1.65;
+
+    font-size:16px;
+
 }
 
-a{color: var(--black); text-decoration: none;}
-a:hover {color: #1F4E79; text-decoration: underline;}
+
+
+/* =========================
+   Links
+========================= */
+
+
+a {
+
+    color:var(--black);
+
+    text-decoration:none;
+
+}
+
+
+
+a:hover {
+
+    color:var(--blue);
+
+    text-decoration:underline;
+
+    text-underline-offset:3px;
+
+}
+
+
 
 /* =========================
    Top Navigation
 ========================= */
+
+
 .topnav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    height: 55px;
-    background: rgba(255,255,255,0.95);
-    border-bottom: 1px solid #e8e8e8;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    height:var(--nav-h);
+
+    background:rgba(255,255,255,0.95);
+
+    border-bottom:1px solid var(--line);
+
 }
+
+
 
 .topnav-inner {
-    max-width: 1030px;
-    height: 55px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    max-width:var(--max-w);
+
+    height:var(--nav-h);
+
+    margin:auto;
+
+    padding:0 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
 }
+
+
 
 .home-link {
-    font-size: 17px;
-    font-weight: 600;
-    color: #222;
-    text-decoration: none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:var(--black);
+
 }
+
+
 
 .nav-links {
-    display: flex;
-    gap: 22px;
+
+    display:flex;
+
+    gap:22px;
+
 }
+
+
 
 .nav-links a {
-    font-size: 14px;
-    color: #555;
-    font-weight: 700;
+
+    font-size:14px;
+
+    color:#555;
+
+    font-weight:700;
+
 }
 
+
+
 .nav-links a:hover {
-    color: #000;
-    text-decoration: none;
+
+    color:var(--blue);
+
+    text-decoration:none;
+
 }
+
+
 
 /* =========================
    Main Layout
 ========================= */
 
+
 .page {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 30px 20px 70px;
-    display: grid;
-    grid-template-columns: var(--side-w) minmax(0, 1fr);
-    gap: 42px;
+
+    max-width:var(--max-w);
+
+    margin:0 auto;
+
+    padding:30px 20px 70px;
+
+    display:grid;
+
+    grid-template-columns:
+        var(--side-w)
+        minmax(0,1fr);
+
+    gap:42px;
+
 }
+
+
+
 
 /* =========================
    Sidebar
 ========================= */
+
+
 aside {
-    text-align: center;
-    position: sticky;
-    top: 80px;
-    align-self: start;
+
+    text-align:center;
+
+    position:sticky;
+
+    top:80px;
+
+    align-self:start;
+
 }
+
+
 
 .portrait {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+    border:1px solid var(--blue-line);
+
 }
 
+
+
 aside h1 {
-    font-size: 23px;
-    margin: 5px 0;
-    font-weight: 600;
+
+    font-size:23px;
+
+    margin:5px 0;
+
+    font-weight:600;
+
 }
 
 
 
 .chinese-name {
-    margin-top: -5px;
-    color: #555;
+
+    margin-top:-5px;
+
+    color:#555;
+
 }
 
+
+
 aside p {
-    font-size: 14px;
-    margin: 10px 0;
+
+    font-size:14px;
+
+    margin:10px 0;
+
 }
+
+
 
 /* =========================
    Main Content
 ========================= */
+
+
 main {
-    min-width: 0;
+
+    min-width:0;
+
 }
 
 
 
 section {
 
-
-    margin-bottom: 42px;
-
+    margin-bottom:42px;
 
 }
 
@@ -156,27 +296,19 @@ section {
 
 h2 {
 
+    font-size:25px;
 
-    font-size: 25px;
+    font-weight:600;
 
+    color:#222;
 
-    font-weight: 600;
+    padding-bottom:7px;
 
+    margin-top:0;
 
-    color: #222;
+    margin-bottom:18px;
 
-
-    padding-bottom: 7px;
-
-
-    margin-top: 0;
-
-
-    margin-bottom: 18px;
-
-
-    border-bottom: 1px solid #e5e5e5;
-
+    border-bottom:1px solid var(--line);
 
 }
 
@@ -184,11 +316,9 @@ h2 {
 
 p {
 
+    margin-top:8px;
 
-    margin-top: 8px;
-
-    margin-bottom: 15px;
-
+    margin-bottom:15px;
 
 }
 
@@ -196,9 +326,7 @@ p {
 
 ul {
 
-
-    padding-left: 25px;
-
+    padding-left:25px;
 
 }
 
@@ -206,12 +334,23 @@ ul {
 
 li {
 
-
-    margin-bottom: 8px;
-
+    margin-bottom:8px;
 
 }
 
+
+
+
+/* =========================
+   Research List
+========================= */
+
+
+.research-list li::marker {
+
+    color:var(--blue);
+
+}
 
 
 
@@ -223,9 +362,7 @@ li {
 
 .publication {
 
-
-    margin-bottom: 25px;
-
+    margin-bottom:25px;
 
 }
 
@@ -233,18 +370,13 @@ li {
 
 .paper-title {
 
+    font-size:17px;
 
-    font-size: 17px;
+    font-weight:600;
 
+    color:#222;
 
-    font-weight: 600;
-
-
-    color: #222;
-
-
-    margin-bottom: 8px;
-
+    margin-bottom:8px;
 
 }
 
@@ -252,9 +384,7 @@ li {
 
 .paper-authors {
 
-
-    margin-bottom: 6px;
-
+    margin-bottom:6px;
 
 }
 
@@ -262,12 +392,11 @@ li {
 
 .paper-venue {
 
+    font-size:14px;
 
-    font-size: 14px;
-
+    color:var(--blue);
 
 }
-
 
 
 
@@ -279,19 +408,13 @@ li {
 
 footer {
 
+    margin-top:60px;
 
-    margin-top: 60px;
+    text-align:center;
 
-
-    text-align: center;
-
-
-    padding-bottom: 30px;
-
+    padding-bottom:30px;
 
 }
-
-
 
 
 
@@ -303,12 +426,9 @@ footer {
 @media(max-width:750px){
 
 
-
     .topnav-inner {
 
-
         padding:0 15px;
-
 
     }
 
@@ -316,9 +436,7 @@ footer {
 
     .home-link {
 
-
         display:none;
-
 
     }
 
@@ -326,14 +444,11 @@ footer {
 
     .nav-links {
 
-
         width:100%;
 
         justify-content:center;
 
-
         gap:12px;
-
 
     }
 
@@ -341,37 +456,27 @@ footer {
 
     .nav-links a {
 
-
         font-size:12px;
 
-
     }
-
 
 
 
     .page {
 
-
         display:block;
 
-
         padding:30px 20px;
-
 
     }
 
 
 
-
     aside {
-
 
         position:static;
 
-
         margin-bottom:40px;
-
 
     }
 
@@ -379,11 +484,9 @@ footer {
 
     .portrait {
 
-
         width:140px;
 
         height:140px;
-
 
     }
 
