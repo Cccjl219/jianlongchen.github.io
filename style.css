@@ -39,7 +39,7 @@ body {
 }
 
 a{color: var(--black); text-decoration: none;}
-a:hover {color: #00FFFF; text-decoration: none;}
+a:hover {color: #00FFFF; text-decoration: underline;}
 
 /* =========================
    Top Navigation
