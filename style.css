@@ -168,7 +168,6 @@ aside p {
     margin:10px 0;
 }
 
-
 /* =========================
    Main Content
 ========================= */
@@ -187,23 +186,17 @@ h2 {
     padding-bottom:7px;
     margin-top:0;
     margin-bottom:18px;
-
     border-bottom:1px solid var(--line);
-
 }
-
-
 
 p {
     margin-top:8px;
     margin-bottom:15px;
 }
 
-
 ul {
     padding-left:25px;
 }
-
 
 li {
     margin-bottom:8px;
@@ -239,6 +232,9 @@ li {
     color:var(--blue);
 }
 
+.paper-venue a {
+    font-size:17px;
+}
 /* =========================
    Footer
 ========================= */
