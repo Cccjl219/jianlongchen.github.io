@@ -180,8 +180,8 @@ section {
 
 h2 {
     font-size:25px;
-    font-weight:600;
-    color:#222;
+    font-weight:800;
+    color: var(--black);;
     padding-bottom:7px;
     margin-top:0;
     margin-bottom:18px;
