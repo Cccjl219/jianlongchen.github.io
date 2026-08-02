@@ -18,7 +18,6 @@
     --page: #ffffff;
     --line: #eeeeee;
 
-
     /* Keep reference style */
     --max-w: 1030px;
     --side-w: 245px;
@@ -28,286 +27,165 @@
 
 }
 
-
-
 * {
     box-sizing: border-box;
 }
 
-
-
 html {
-
     scroll-behavior: smooth;
-
 }
 
-
-
 body {
-
     margin:0;
-
     font-family:
         "Helvetica Neue",
         Helvetica,
         Arial,
         sans-serif;
-
     color:var(--text);
-
     background:var(--bg);
-
     line-height:1.65;
-
-    font-size:17px;
-
+    font-size:19px;
 }
-
-
 
 /* =========================
    Links
 ========================= */
-
-
 a {
-
     color:var(--black);
-
     text-decoration:none;
-
 }
-
-
 
 a:hover {
-
     color:var(--blue);
-
     text-decoration:underline;
-
     text-underline-offset:3px;
-
 }
-
-
 
 /* =========================
    Top Navigation
 ========================= */
-
-
 .topnav {
-
     position:sticky;
-
     top:0;
-
     z-index:1000;
-
     height:var(--nav-h);
-
     background:rgba(255,255,255,0.95);
-
     border-bottom:1px solid var(--line);
-
 }
 
 
 
 .topnav-inner {
-
     max-width:var(--max-w);
-
     height:var(--nav-h);
-
     margin:auto;
-
     padding:0 20px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
 }
 
 .home-link {
 
     font-size:17px;
-
     font-weight:600;
-
     color:var(--black);
-
 }
 
 .nav-links {
-
     display:flex;
-
     gap:22px;
-
 }
 
 .nav-links a {
-
-    font-size:14px;
-
+    font-size:15px;
     color:#555;
-
     font-weight:700;
-
 }
 
 .nav-links a:hover {
-
     color:var(--blue);
-
     text-decoration:none;
-
 }
 
 
 /* =========================
    Main Layout
 ========================= */
-
 .page {
-
     max-width:var(--max-w);
-
     margin:0 auto;
-
     padding:30px 20px 70px;
-
     display:grid;
-
     grid-template-columns:
         var(--side-w)
         minmax(0,1fr);
-
     gap:42px;
-
 }
-
-
-
 
 /* =========================
    Sidebar
 ========================= */
-
-
 aside {
-
     text-align:center;
-
     position:sticky;
-
     top:80px;
-
     align-self:start;
-
 }
 
 aside svg {
-
     width:18px;
-
     height:18px;
-
     vertical-align:-3px;
-
     margin-right:6px;
-
 }
 
 .portrait {
-
     width:170px;
-
     height:170px;
-
     border-radius:50%;
-
     object-fit:cover;
-
     margin-bottom:15px;
-
     border:1px solid var(--blue-line);
-
 }
-
-
 
 aside h1 {
-
-    font-size:23px;
-
+    font-size:25px;
     margin:5px 0;
-
-    font-weight:600;
-
+    font-weight:800;
 }
-
-
 
 .chinese-name {
-
+    font-size:25px;
     margin-top:-5px;
-
     color:#555;
-
 }
-
 
 
 aside p {
-
-    font-size:14px;
-
+    font-size:15px;
     margin:10px 0;
-
 }
-
 
 
 /* =========================
    Main Content
 ========================= */
-
-
 main {
-
     min-width:0;
-
 }
-
-
 
 section {
-
     margin-bottom:42px;
-
 }
 
-
-
 h2 {
-
     font-size:25px;
-
     font-weight:600;
-
     color:#222;
-
     padding-bottom:7px;
-
     margin-top:0;
-
     margin-bottom:18px;
 
     border-bottom:1px solid var(--line);
@@ -317,179 +195,95 @@ h2 {
 
 
 p {
-
     margin-top:8px;
-
     margin-bottom:15px;
-
 }
-
 
 
 ul {
-
     padding-left:25px;
-
 }
-
 
 
 li {
-
     margin-bottom:8px;
-
 }
-
-
-
 
 /* =========================
    Research List
 ========================= */
-
-
 .research-list li::marker {
-
     color:var(--blue);
-
 }
-
-
-
 
 /* =========================
    Publication
 ========================= */
-
-
 .publication {
-
     margin-bottom:25px;
-
 }
-
-
 
 .paper-title {
-
-    font-size:17px;
-
-    font-weight:600;
-
+    font-size:19px;
+    font-weight:800;
     color:#222;
-
     margin-bottom:8px;
-
 }
-
-
 
 .paper-authors {
-
     margin-bottom:6px;
-
 }
-
-
 
 .paper-venue {
-
     font-size:14px;
-
     color:var(--blue);
-
 }
-
-
-
 
 /* =========================
    Footer
 ========================= */
-
-
 footer {
-
     margin-top:60px;
-
     text-align:center;
-
     padding-bottom:30px;
-
 }
-
-
 
 /* =========================
    Mobile
 ========================= */
-
-
 @media(max-width:750px){
-
-
     .topnav-inner {
-
         padding:0 15px;
-
     }
-
-
 
     .home-link {
-
         display:none;
-
     }
-
-
 
     .nav-links {
-
         width:100%;
-
         justify-content:center;
-
         gap:12px;
-
     }
-
-
 
     .nav-links a {
-
         font-size:12px;
-
     }
-
-
 
     .page {
-
         display:block;
-
         padding:30px 20px;
-
     }
-
 
 
     aside {
-
         position:static;
-
         margin-bottom:40px;
-
     }
 
-
-
     .portrait {
-
         width:140px;
-
         height:140px;
-
     }
 
 
