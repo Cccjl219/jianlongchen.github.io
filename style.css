@@ -228,13 +228,11 @@ li {
 }
 
 .paper-venue {
-    font-size:14px;
+    font-size:17px;
     color:var(--blue);
 }
 
-.paper-venue a {
-    font-size:17px;
-}
+
 /* =========================
    Footer
 ========================= */
